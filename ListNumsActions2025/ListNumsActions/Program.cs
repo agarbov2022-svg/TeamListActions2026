@@ -28,7 +28,10 @@
                         break;
 
 
-                    //TO DO
+                    case "del":
+                        int number = int.Parse(cmd[1]);
+                        nums.Remove(number);
+                        break;
                     default:
                         break;
                 }
