@@ -58,6 +58,9 @@ while (true)
         case "countEvens":
             Console.WriteLine("CountEvens=" + nums.Count(x => x % 2 == 0));
             break;
+        case "sumAll":
+            Console.WriteLine(nums.Sum());
+            break;
         default:
             break;
 
