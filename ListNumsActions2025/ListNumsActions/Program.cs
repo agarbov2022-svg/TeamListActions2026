@@ -55,6 +55,9 @@ while (true)
         case "countOdds":
             Console.WriteLine("CountOdds=" + nums.Count(x => x % 2 != 0));
             break;
+        case "countEvens":
+            Console.WriteLine("CountEvens=" + nums.Count(x => x % 2 == 0));
+            break;
         default:
             break;
 
