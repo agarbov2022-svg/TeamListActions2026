@@ -1,5 +1,9 @@
-﻿namespace ListNumsActions
+﻿   
+namespace ListNumsActions
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
     internal class Program
     {
         static void Main(string[] args)
@@ -23,8 +27,17 @@
                         Console.WriteLine(string.Join(" ", nums));
                         break;
                     case "contains":
-                        
-                        //TODO
+
+                        int searchNum = int.Parse(cmd[1]);
+
+                        if (nums.Contains(searchNum))
+                        {
+                            Console.WriteLine("Yes");
+                        }
+                        else
+                        {
+                            Console.WriteLine("NO");
+                        }
                         break;
 
 
