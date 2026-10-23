@@ -52,6 +52,9 @@ while (true)
             int limit = int.Parse(cmd[1]);
             Console.WriteLine(nums.Count(x => x > limit));
             break;
+        case "countOdds":
+            Console.WriteLine("CountOdds=" + nums.Count(x => x % 2 != 0));
+            break;
         default:
             break;
 
