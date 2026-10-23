@@ -48,6 +48,10 @@ while (true)
             nums.RemoveAt(removeIndex);
 
             break;
+        case "countl":
+            int limit = int.Parse(cmd[1]);
+            Console.WriteLine(nums.Count(x => x > limit));
+            break;
         default:
             break;
 
