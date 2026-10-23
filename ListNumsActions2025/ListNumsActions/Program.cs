@@ -45,8 +45,15 @@ namespace ListNumsActions
                         int number = int.Parse(cmd[1]);
                         nums.Remove(number);
                         break;
+                    case "add":
+                        int num1 = int.Parse(cmd[1]);
+                        int num2 = int.Parse(cmd[2]);
+                        nums.Add(num1 + num2);
+                        break;
                     default:
                         break;
+
+
                 }
             }
         }
